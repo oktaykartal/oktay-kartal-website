@@ -31,15 +31,16 @@
         </div>
       </section>
 
-      <form class="contact-form" id="contact-form">
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/xzezojno" method="POST">
         <div class="contact-name-fields">
           <label>First Name<input type="text" name="firstName" autocomplete="given-name" required /></label>
           <label>Last Name<input type="text" name="lastName" autocomplete="family-name" required /></label>
         </div>
         <label>Email<input type="email" name="email" autocomplete="email" required /></label>
         <label>Message<textarea name="message" rows="7" required></textarea></label>
+        <input class="contact-honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <button type="submit">SEND</button>
-        <p class="contact-form-note">Your email application will open with the completed message.</p>
+        <p class="contact-form-note" id="contact-form-status" role="status" aria-live="polite">Your message will be sent directly to Oktay Kartal.</p>
       </form>
     </main>
   </body>
