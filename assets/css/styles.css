@@ -122,7 +122,12 @@ img { display: block; width: 100%; }
 .contact-form textarea { resize: vertical; min-height: 9rem; }
 .contact-form button { min-height: 2.7rem; border: 1px solid #111; background: #111; color: #fff; font-size: .72rem; font-weight: 700; letter-spacing: .12em; cursor: pointer; transition: background .2s, color .2s; }
 .contact-form button:hover, .contact-form button:focus-visible { background: #fff; color: #111; }
+.contact-form button:disabled { cursor: wait; opacity: .6; }
+.contact-honeypot { position: absolute !important; width: 1px !important; height: 1px !important; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .contact-form-note { margin: -.5rem 0 0; color: #777; font-size: .67rem; font-style: italic; }
+.contact-form-note.is-success { color: #176b3a; }
+.contact-form-note.is-error { color: #9f1d1d; }
+.contact-form-note a { text-decoration: underline; text-underline-offset: .2em; }
 .project-placeholder { min-height: 100svh; display: grid; place-items: center; padding: 2rem; text-align: center; }
 .project-placeholder h1 { margin: 0 0 1rem; font-size: clamp(2rem, 6vw, 6rem); line-height: .95; }
 .project-placeholder a { text-decoration: underline; text-underline-offset: .3rem; }
