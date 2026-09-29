@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Architecture and research portfolio of Oktay Kartal." />
+    <meta name="theme-color" content="#f4f3ef" />
+    <title>Oktay Kartal — Architecture & Research</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2311110f'/%3E%3Cpath d='M15 16v32M15 32l25-16M15 32l25 16' stroke='%23f4f3ef' stroke-width='5' fill='none'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/content.js" defer></script>
+    <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/hero-sequence.js" defer></script>
+  </head>
+  <body class="home-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <main id="main">
+      <section class="hero" id="top" aria-label="Oktay Kartal portfolio">
+        <video class="hero-media hero-video is-active" autoplay muted playsinline preload="metadata" poster="assets/images/hero-poster.jpg">
+          <source src="assets/video/oktay-kartal-hero.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-identity">
+          <img class="hero-logo" src="assets/images/oktay-kartal-logo.png" alt="Oktay Kartal" />
+          <nav class="hero-nav" aria-label="Primary navigation">
+            <a href="projects.html">PROJECTS</a>
+            <a href="research.html">RESEARCH</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section work-section legacy-content" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <h2 id="work-title">WORK</h2>
+          <p>Selected architecture and design projects</p>
+        </div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </section>
+
+      <section class="section research-section legacy-content" id="research" aria-labelledby="research-title">
+        <div class="section-heading">
+          <h2 id="research-title">RESEARCH</h2>
+          <p>Writing, presentations, and ongoing inquiry</p>
+        </div>
+        <div class="research-list" id="research-list"></div>
+      </section>
+
+      <section class="section about-section legacy-content" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <h2 id="about-title">ABOUT</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>Oktay Kartal is a designer and M.Arch candidate at NC State University. His work investigates how architectural systems, spatial organization, and human experience interact across scales.</p>
+            <p>His current interests connect design research, emerging technologies, simulation, and architectural history without treating them as separate practices.</p>
+          </div>
+          <dl class="about-facts">
+            <div><dt>EDUCATION</dt><dd>NC State University, M.Arch, expected 2027<br />Middle East Technical University, B.Arch, 2024</dd></div>
+            <div><dt>EXPERIENCE</dt><dd>Designer, Motus Architecture<br />Teaching Assistant, NC State University</dd></div>
+            <div><dt>LOCATION</dt><dd>Raleigh, North Carolina</dd></div>
+            <div><dt>DOCUMENT</dt><dd><a href="assets/documents/Oktay-Kartal-CV.pdf" target="_blank" rel="noopener">View / Download CV ↗</a></dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section contact-section legacy-content" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading"><h2 id="contact-title">CONTACT</h2></div>
+        <div class="contact-grid">
+          <p>For professional, academic, and collaborative inquiries.</p>
+          <div class="contact-links">
+            <a href="mailto:kkartal.oktay@gmail.com">kkartal.oktay@gmail.com ↗</a>
+            <a href="mailto:okartal@ncsu.edu">okartal@ncsu.edu ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer legacy-content">
+      <p>OKTAY KARTAL</p>
+      <p>ARCHITECTURE / RESEARCH</p>
+      <p>© <span id="year"></span></p>
+    </footer>
+
+    <dialog class="project-dialog legacy-content" id="project-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close project">CLOSE ×</button>
+      <div id="dialog-content"></div>
+    </dialog>
+  </body>
+</html>

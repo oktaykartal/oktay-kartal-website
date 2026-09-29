@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contact designer and researcher Oktay Kartal." />
+    <title>Contact — Oktay Kartal</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/contact.js" defer></script>
+  </head>
+  <body class="contact-page">
+    <header class="projects-header">
+      <a class="projects-home" href="index.html" aria-label="Return to home"><img src="assets/images/oktay-kartal-logo.png" alt="Oktay Kartal" /></a>
+      <h1>CONTACT</h1>
+      <a class="projects-back" href="index.html">BACK</a>
+    </header>
+
+    <main class="contact-main">
+      <section class="contact-details" aria-labelledby="contact-heading">
+        <p class="contact-kicker">CONTACT</p>
+        <h2 id="contact-heading">Get in Touch</h2>
+        <p>Open to professional design opportunities, academic inquiries, interdisciplinary collaborations, and research partnerships.</p>
+        <address>
+          Raleigh, North Carolina<br />
+          United States
+        </address>
+        <div class="contact-direct">
+          <a href="mailto:okartal@ncsu.edu">okartal@ncsu.edu</a>
+          <a href="mailto:kkartal.oktay@gmail.com">kkartal.oktay@gmail.com</a>
+          <a href="https://www.linkedin.com/in/kartaloktay" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </section>
+
+      <form class="contact-form" id="contact-form">
+        <div class="contact-name-fields">
+          <label>First Name<input type="text" name="firstName" autocomplete="given-name" required /></label>
+          <label>Last Name<input type="text" name="lastName" autocomplete="family-name" required /></label>
+        </div>
+        <label>Email<input type="email" name="email" autocomplete="email" required /></label>
+        <label>Message<textarea name="message" rows="7" required></textarea></label>
+        <button type="submit">SEND</button>
+        <p class="contact-form-note">Your email application will open with the completed message.</p>
+      </form>
+    </main>
+  </body>
+</html>
